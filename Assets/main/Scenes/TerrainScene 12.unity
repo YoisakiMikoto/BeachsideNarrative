@@ -5972,8 +5972,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 30
-  rotationSpeed: 180
-  zoomSpeed: 10
+  rotationSpeed: 270
+  zoomSpeed: 15
   smoothTime: 0.2
   minHeight: 24
   maxHeight: 71
