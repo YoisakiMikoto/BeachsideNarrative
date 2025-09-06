@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Water
+  m_Shader: {fileID: 4800000, guid: 14350635ba36124468b093454c65395e, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _CausticsTex:
+        m_Texture: {fileID: 2800000, guid: bdf93234f5473674e8ee00ad373856c8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: 852af351f94599c4ab83361043fca7ce, type: 3}
+        m_Scale: {x: 5, y: 5}
+        m_Offset: {x: 0, y: 0}
+    - _Ramp:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _CausticsIntensity: 11.9
+    - _CausticsRange: 3.76
+    - _CausticsScale: 75
+    - _DayColor: 0
+    - _DayFresnel: 0
+    - _Daylight: 0
+    - _DeepRange: 4.6
+    - _FoamBlend: 2
+    - _FoamDissolve: 1.25
+    - _FoamRange: 1.17
+    - _FoamSpeed: 5.37
+    - _FoamWidth: 0.45
+    - _FresnelPower: 16.6
+    - _NormalScale: 75
+    - _ReflectDisort: 1
+    - _ReflectFresnel: 1.98
+    - _ShoreRange: 3.63
+    - _SpecularPower: 58
+    - _SpecularVal: 0.92
+    - _TessMax: 14.19
+    - _TessMin: 11.57
+    - _TessPhongStrength: 0.704
+    - _TessValue: 26.5
+    - _UnderWaterDistort: 0
+    - _WaveBlend: 0.75
+    - _WaveField: 1.32
+    - __dirty: 0
+    - _tessMax: 0.36
+    - _tessMin: 0.36
+    - _tessVal: 0.16
+    m_Colors:
+    - _CausticsSpeed: {r: 2, g: 0, b: 0, a: 0}
+    - _DeepColor: {r: 0, g: 0.33741912, b: 0.46226418, a: 1}
+    - _FoamColor: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 1}
+    - _FoamNoiseSize: {r: 100, g: 100, b: 0, a: 0}
+    - _Fresnel: {r: 0, g: 0.8018868, b: 0.7470996, a: 0}
+    - _NormalSpeed: {r: 1, g: -1, b: 1, a: 1}
+    - _ShallowColor: {r: 0, g: 1, b: 0.84148383, a: 0.78039217}
+    - _ShoreColor: {r: 1, g: 0.97524667, b: 0.9386792, a: 1}
+    - _Wave1: {r: 1, g: 1.97, b: 0.26, a: -0.43}
+    - _Wave2: {r: 2, g: 2, b: 0, a: 0.07}
+    - _Wave3: {r: -0.6, g: 0.4, b: -0.4, a: 0.54}
+  m_BuildTextureStacks: []

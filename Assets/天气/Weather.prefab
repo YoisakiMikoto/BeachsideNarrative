@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3854387668647033112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2879214675885324413}
+  - component: {fileID: 7913258933791948105}
+  - component: {fileID: 8868664408893273029}
+  m_Layer: 0
+  m_Name: Weather
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2879214675885324413
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3854387668647033112}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7913258933791948105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3854387668647033112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe1b550a39a8b34d9c93bc308bb9997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  directionalLight: {fileID: 0}
+  dayLength: 240
+  fogDensityDay: 0.02
+  fogDensityNight: 0.05
+  LightStatus:
+  - Type: 0
+    moringLight: 0.5
+    dayLight: 1
+    sunsetLight: 0.5
+    nightLight: 0.1
+    daySkybox: {fileID: 2100000, guid: 184c9a18a0b1fea4aa89fb93a95ef3e7, type: 2}
+    nightSkybox: {fileID: 2100000, guid: e562fc9b63d1716488a2c4681c74156b, type: 2}
+    morningSkybox: {fileID: 2100000, guid: 213495ce9b94c264cbc93372d2b9d142, type: 2}
+    sunsetSkybox: {fileID: 2100000, guid: 66ec768b02321cf4f8389d57d471013c, type: 2}
+  - Type: 1
+    moringLight: 0.4
+    dayLight: 0.9
+    sunsetLight: 0.4
+    nightLight: 0.05
+    daySkybox: {fileID: 2100000, guid: 0e0b26268f188e146908aa9b4fb7f6c1, type: 2}
+    nightSkybox: {fileID: 2100000, guid: 382a0fd28cd7a7647abbaab39b46bda8, type: 2}
+    morningSkybox: {fileID: 2100000, guid: 78b3ae8153a6dee4ab17c93dc0ec8b10, type: 2}
+    sunsetSkybox: {fileID: 2100000, guid: 603526d709f557442a08039039b2a573, type: 2}
+  - Type: 2
+    moringLight: 0.2
+    dayLight: 0.4
+    sunsetLight: 0.5
+    nightLight: 0.05
+    daySkybox: {fileID: 2100000, guid: c573c241a8b26d742b4a87ab50b0f885, type: 2}
+    nightSkybox: {fileID: 2100000, guid: 445b551d4fc93ff4f875b4fcd42b0294, type: 2}
+    morningSkybox: {fileID: 2100000, guid: 9779c7f0b5f30724b8de2da4dfe48535, type: 2}
+    sunsetSkybox: {fileID: 2100000, guid: 42290e0fffa2b6242bd8b448267d33d9, type: 2}
+  isMorning: 0
+  isDay: 0
+  isSunset: 0
+  isNight: 0
+  isChangeBox: 0
+  time: 0
+  weatherChangeTime: 1
+  isChangeWeather: 0
+  weatherType: 0
+  dayWeathers:
+  - weatherTimes:
+    - type: 0
+      startTime: 0
+  dayWeatherMode: 0
+  dayWeatherIndex: 0
+  rain: {fileID: 0}
+--- !u!114 &8868664408893273029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3854387668647033112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54c37f2c5e0b0c644ab1afd32a85bb22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cloudPrefab: {fileID: 5068311557168622215, guid: 418152438d370e34eb6d840ee59e0c40, type: 3}
+  maxClouds: 40
+  spawnInterval: 2
+  moveDirection: {x: 1, y: 0, z: 0}
+  baseSpeed: 0.5
+  speedVariation: 0.2
+  horizontalRangeX: {x: -5, y: -4.5}
+  horizontalRangeZ: {x: -5, y: 5}
+  verticalRange: {x: 4, y: 5}
+  sizeRange: {x: 0.5, y: 1.5}
+  initialClouds: 15
+  initialRangeX: {x: -5, y: 5}
+  initialRangeZ: {x: -5, y: 5}
+  disappearDelay: 0.5
+  disappearRangeX: {x: -8, y: 8}
+  disappearRangeZ: {x: -8, y: 8}
